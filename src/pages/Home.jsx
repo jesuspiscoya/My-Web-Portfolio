@@ -9,7 +9,7 @@ import "../styles/bg-stars.css"
 import "../styles/btn-conffeti.css"
 
 export const Home = () => {
-    const element = useRef(null)
+    const textRef = useRef(null)
 
     const clickConffeti = () => {
         Confetti({
@@ -25,8 +25,15 @@ export const Home = () => {
         })
     }
 
+    const clickToggle = () => {
+        const sideBar = document.querySelector(".sidebar")
+        const main = document.querySelector(".main")
+        sideBar.classList.toggle("active")
+        main.classList.toggle("active")
+    }
+
     useEffect(() => {
-        const typed = new Typed(element.current, {
+        new Typed(textRef.current, {
             strings: ['Estudiante', 'Movil Developer', 'Web Developer', 'Fullstack Developer'],
             typeSpeed: 150,
             backDelay: 150,
@@ -36,7 +43,7 @@ export const Home = () => {
     }, [])
 
     return (
-        <section className="d-flex justify-content-center align-items-center vh-100">
+        <>
             <div className="stars">
                 <div className="star"></div>
                 <div className="star"></div>
@@ -90,21 +97,28 @@ export const Home = () => {
                 <div className="star"></div>
             </div>
             <SideBar />
-            <div id="hero" className="text-center position-absolute d-flex justify-content-center">
-                <div>
-                    <p>Hola👋, Soy</p>
-                    <h1 className="content">Jesus<br />Piscoya</h1>
-                    <h4 className="my-3 pb-4"><span ref={element}></span></h4>
-                    <a id="button-cv" href={cv} download="CV-JESUS-PISCOYA-BANCES.pdf" onClick={clickConffeti}>Descargar CV</a>
-                    {/* <ConfettiButton /> */}
+            <section className="main active">
+                <div className="toggle m-4" onClick={clickToggle}>
+                    <i className="fa-solid fa-bars-staggered fa-xl"></i>
                 </div>
-                <div className="mx-5 px-3" />
-                <div id="profile" className="w-25">
-                    <img src={profile} className="img-fluid rounded-circle" />
+                <div className="text-center d-flex justify-content-center align-items-center h-100">
+                    <div>
+                        <p>Hola👋, Soy</p>
+                        <h1 className="name-aurora">Jesus<br />Piscoya</h1>
+                        <h4 className="my-3 pb-4">
+                            <span ref={textRef}></span>
+                        </h4>
+                        <a id="button-cv" href={cv} download="CV-JESUS-PISCOYA-BANCES.pdf" onClick={clickConffeti}>
+                            <i className="fa-solid fa-circle-down fa-lg"></i>Descargar CV
+                        </a>
+                        {/* <ConfettiButton /> */}
+                    </div>
+                    <div className="mx-5 px-3" />
+                    <div className="home-photo w-25">
+                        <img src={profile} className="img-fluid rounded-circle" />
+                    </div>
                 </div>
-            </div>
-            <div className="mx-5 px-4"></div>
-
-        </section>
+            </section>
+        </>
     )
 }

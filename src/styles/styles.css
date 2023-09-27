@@ -8,8 +8,8 @@
 }
 
 :root {
-    --primary: #241a49;
-    --secondary: #171a28;
+    --primary: #171a28;
+    --secondary: #8e8e8e53;
     --white: #fff;
     --green-light: #00e955;
     --blue-light: #00dada;
@@ -20,99 +20,109 @@
 body {
     min-height: 100vh;
     overflow-x: hidden;
-    background: #171a28;
+    background: var(--primary);
     color: var(--white);
 }
 
 /* Sidebar Css */
 .sidebar {
-    position: fixed;
     background: radial-gradient(ellipse at bottom, #0d233c 0%, #28292c83 100%);
-    left: 0;
     width: 280px;
-    height: 100%;
-    transition: 0.5s;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 600;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     backdrop-filter: blur(3px);
+    transition: width 0.5s;
+    transition-timing-function: ease;
+}
+
+.profile {
+    display: none;
+    width: 280px;
+    height: 258px;
+    transition: height 0.5s, opacity 1.5s;
 }
 
 .profile img {
-    margin: 20px auto;
     display: block;
     width: 40%;
-    border: 8px solid #2c2f3f;
+    border: 7px solid var(--secondary);
+    transition: width 0.9s, border 0.7s;
 }
 
 .name-title {
     font-weight: 700;
     color: var(--blue-light);
-    text-align: center;
 }
 
 .social-links a {
     color: var(--white);
     display: inline-block;
-    background: #8e8e8e53;
+    background: var(--secondary);
     color: var(--white);
     padding: 8px 0;
-    margin: 0px 6px;
+    margin: 5px 6px;
     border-radius: 50%;
     text-align: center;
     width: 36px;
     height: 36px;
-    transition: 0.3s;
 }
 
 .social-links a:hover {
     background: #00acfb;
 }
 
-.navigation.active {
-    width: 80px;
+.sidebar.active {
+    width: 85px;
 }
 
-.navigation ul {
-    width: 100%;
-    margin-bottom: 0;
+.sidebar.active .profile {
+    height: 0;
+    opacity: 0;
+    transition: height 0.7s ease, opacity 0.2s;
+}
+
+.sidebar.active .title {
+    opacity: 0;
+    transition: opacity 0.2s;
 }
 
 .navigation ul li {
     position: relative;
-    width: 100%;
     list-style: none;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
 }
 
 .navigation ul li a {
-    position: relative;
-    display: block;
-    width: 100%;
+    height: 60px;
     display: flex;
     text-decoration: none;
     color: var(--white);
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
-    transition: 0.5s;
+    transition: color 0.5s;
 }
 
 .navigation ul li a i {
-    width: 35px;
+    min-width: 40px;
 }
 
 .navigation ul li a .title {
-    padding: 0 10px;
-    line-height: 60px;
+    padding: 0 14px;
+    white-space: nowrap;
+    transition: opacity 1.5s;
 }
 
-.navigation ul li a.active {
-    background-color: var(--secondary);
+.navigation ul li.active {
+    background: var(--primary);
+}
+
+.navigation ul li.active a {
     color: var(--blue-light) !important;
 }
 
-.navigation ul li a.active::before {
+.navigation ul li.active::before {
     content: "";
     position: absolute;
     background: transparent;
@@ -121,10 +131,10 @@ body {
     width: 20px;
     height: 20px;
     border-bottom-right-radius: 20px;
-    box-shadow: 5px 5px 0 5px var(--secondary);
+    box-shadow: 5px 5px 0 5px var(--primary);
 }
 
-.navigation ul li a.active::after {
+.navigation ul li.active::after {
     content: "";
     position: absolute;
     background: transparent;
@@ -133,30 +143,30 @@ body {
     width: 20px;
     height: 20px;
     border-top-right-radius: 20px;
-    box-shadow: 5px -5px 0 5px var(--secondary);
+    box-shadow: 5px -5px 0 5px var(--primary);
 }
 
-.navigation ul li a:hover,
-.navigation ul li a.hovered {
+.navigation ul li a:hover {
     color: var(--green-light);
-    transition: 0.5s;
 }
-
-
-
-
 
 /* Home Css */
-#hero {
+.main {
     left: 280px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    transition: left 0.6s;
+    transition-timing-function: ease;
 }
 
-#hero p {
+.main p {
     font-weight: 600;
 }
 
 /* Aurora Name */
-.content {
+.name-aurora {
     height: 160px;
     font-weight: 800;
     font-size: 75px;
@@ -168,6 +178,24 @@ body {
     background-image: linear-gradient(45deg, aqua, blue, Magenta, red, orange, yellow, cyan, blue, violet, cyan);
     background-size: 400% 400%;
     animation: animate 30s ease infinite;
+}
+
+.main.active {
+    left: 85px;
+}
+
+.home-photo {
+    padding: 10px;
+    border-radius: 50%;
+    border: 5px solid var(--white);
+    box-shadow: 0 0 10px var(--white);
+}
+
+.home-photo img {
+    box-shadow: 60px 0 100px -20px #03e9f4,
+        0 80px 60px -40px #034bf4,
+        -60px 0 100px -20px #5303f4,
+        0 -80px 60px -40px #9803f4;
 }
 
 @keyframes animate {
@@ -192,10 +220,13 @@ body {
     }
 }
 
-#hero h4 {
+.main h4 {
     color: #00dada;
     font-weight: 700;
 }
+
+
+
 
 
 
