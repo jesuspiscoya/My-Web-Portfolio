@@ -7,21 +7,26 @@ export const SideBar = () => {
 
     useEffect(() => {
         list = Array.from(navRef.current.children)
-        list.forEach((element) => {
-            element.addEventListener("click", () => activeNav(element))
+        list.forEach((element, index) => {
+            element.addEventListener("click", () => activeNav(element, index))
         })
     }, [])
 
-    const activeNav = (element) => {
+    const activeNav = (element, index) => {
+        const profile = document.querySelector(".profile")
+
         list.forEach((item) => {
             item.classList.remove("active")
-            console.log(item)
         })
         element.classList.add('active')
+
+        index > 0
+            ? profile.classList.add('active')
+            : profile.classList.remove('active')
     }
 
     return (
-        <div className="sidebar position-fixed h-100 active">
+        <div className="sidebar position-fixed h-100">
             <div className="profile py-4">
                 <img src={profile} alt="Profile Photo" className="img-fluid rounded-circle mx-auto" />
                 <h4 className="name-title mt-3 text-center">Jesus Piscoya</h4>
@@ -49,13 +54,13 @@ export const SideBar = () => {
                         </a>
                     </li>
                     <li>
-                        <a href="#" className="ps-3">
+                        <a href="#about" className="ps-3">
                             <i className="fa-solid fa-id-badge fa-lg my-auto"></i>
                             <span className="title my-auto">Sobre mi</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#" className="ps-3">
+                        <a href="#skills" className="ps-3">
                             <i className="fa-solid fa-bolt fa-lg my-auto"></i>
                             <span className="title my-auto">Skills</span>
                         </a>

@@ -1,6 +1,4 @@
 import { useEffect, useRef } from "react"
-import { SideBar } from "../components/SideBar"
-import { ConfettiButton } from "../components/ConfettiButton"
 import Typed from "typed.js"
 import Confetti from "https://esm.run/canvas-confetti@1";
 import cv from "../assets/doc/CV-JESUS-PISCOYA-BANCES.pdf";
@@ -25,100 +23,50 @@ export const Home = () => {
         })
     }
 
-    const clickToggle = () => {
-        const sideBar = document.querySelector(".sidebar")
-        const main = document.querySelector(".main")
-        sideBar.classList.toggle("active")
-        main.classList.toggle("active")
-    }
-
     useEffect(() => {
         new Typed(textRef.current, {
-            strings: ['Estudiante', 'Movil Developer', 'Web Developer', 'Fullstack Developer'],
-            typeSpeed: 150,
-            backDelay: 150,
+            strings: [
+                'Ing. de Sistemas e Informática.',
+                'Movil Developer.',
+                'Web Developer.',
+                'Fullstack Developer.'
+            ],
+            typeSpeed: 130,
+            backDelay: 300,
             smartBackspace: true,
             loop: true
         })
     }, [])
 
     return (
-        <>
-            <div className="stars">
-                <div className="star"></div>
-                <div className="star"></div>
-                <div className="star"></div>
-                <div className="star"></div>
-                <div className="star"></div>
-                <div className="star"></div>
-                <div className="star"></div>
-                <div className="star"></div>
-                <div className="star"></div>
-                <div className="star"></div>
-                <div className="star"></div>
-                <div className="star"></div>
-                <div className="star"></div>
-                <div className="star"></div>
-                <div className="star"></div>
-                <div className="star"></div>
-                <div className="star"></div>
-                <div className="star"></div>
-                <div className="star"></div>
-                <div className="star"></div>
-                <div className="star"></div>
-                <div className="star"></div>
-                <div className="star"></div>
-                <div className="star"></div>
-                <div className="star"></div>
-                <div className="star"></div>
-                <div className="star"></div>
-                <div className="star"></div>
-                <div className="star"></div>
-                <div className="star"></div>
-                <div className="star"></div>
-                <div className="star"></div>
-                <div className="star"></div>
-                <div className="star"></div>
-                <div className="star"></div>
-                <div className="star"></div>
-                <div className="star"></div>
-                <div className="star"></div>
-                <div className="star"></div>
-                <div className="star"></div>
-                <div className="star"></div>
-                <div className="star"></div>
-                <div className="star"></div>
-                <div className="star"></div>
-                <div className="star"></div>
-                <div className="star"></div>
-                <div className="star"></div>
-                <div className="star"></div>
-                <div className="star"></div>
-                <div className="star"></div>
+        <section className="hero d-flex justify-content-between align-items-center vh-100 px-5">
+            <div>
+                <h5>Hola👋, mi nombre es</h5>
+                <h1 className="name-aurora">Jesus</h1>
+                <h4 className="my-3 pb-4">
+                    Soy <span ref={textRef} />
+                </h4>
+                <a id="button-cv" href={cv} download="CV-JESUS-PISCOYA-BANCES.pdf" onClick={clickConffeti}>
+                    <i className="fa-solid fa-circle-down fa-lg"></i>Descargar CV
+                </a>
+                <div className="social-links mt-4 pt-3">
+                    <a href="https://www.linkedin.com/in/jesuspiscoya/" target="_blank">
+                        <i className="fa-brands fa-linkedin fa-lg"></i>
+                    </a>
+                    <a href="https://github.com/jesuspiscoya" target="_blank">
+                        <i className="fa-brands fa-github fa-lg"></i>
+                    </a>
+                    <a href="https://wa.me/51921104614" target="_blank">
+                        <i className="fa-brands fa-whatsapp fa-lg"></i>
+                    </a>
+                    <a href="mailto:correo@ejemplo.com">
+                        <i className="fa-solid fa-envelope fa-lg"></i>
+                    </a>
+                </div>
             </div>
-            <SideBar />
-            <section className="main active">
-                <div className="toggle m-4" onClick={clickToggle}>
-                    <i className="fa-solid fa-bars-staggered fa-xl"></i>
-                </div>
-                <div className="text-center d-flex justify-content-center align-items-center h-100">
-                    <div>
-                        <p>Hola👋, Soy</p>
-                        <h1 className="name-aurora">Jesus<br />Piscoya</h1>
-                        <h4 className="my-3 pb-4">
-                            <span ref={textRef}></span>
-                        </h4>
-                        <a id="button-cv" href={cv} download="CV-JESUS-PISCOYA-BANCES.pdf" onClick={clickConffeti}>
-                            <i className="fa-solid fa-circle-down fa-lg"></i>Descargar CV
-                        </a>
-                        {/* <ConfettiButton /> */}
-                    </div>
-                    <div className="mx-5 px-3" />
-                    <div className="home-photo w-25">
-                        <img src={profile} className="img-fluid rounded-circle" />
-                    </div>
-                </div>
-            </section>
-        </>
+            <div className="home-photo ms-5">
+                <img src={profile} className="img-fluid rounded-circle" />
+            </div>
+        </section>
     )
 }

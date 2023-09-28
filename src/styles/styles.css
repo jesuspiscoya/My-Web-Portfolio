@@ -30,8 +30,8 @@ body {
     width: 280px;
     font-size: 15px;
     font-weight: 600;
-    overflow: hidden;
     display: flex;
+    overflow: hidden;
     flex-direction: column;
     backdrop-filter: blur(3px);
     transition: width 0.5s;
@@ -39,10 +39,10 @@ body {
 }
 
 .profile {
-    display: none;
+    height: 0;
     width: 280px;
-    height: 258px;
-    transition: height 0.5s, opacity 1.5s;
+    opacity: 0;
+    transition: height 0.5s, opacity 0.3s;
 }
 
 .profile img {
@@ -50,6 +50,11 @@ body {
     width: 40%;
     border: 7px solid var(--secondary);
     transition: width 0.9s, border 0.7s;
+}
+
+.profile.active {
+    height: 258px;
+    opacity: 1;
 }
 
 .name-title {
@@ -150,27 +155,50 @@ body {
     color: var(--green-light);
 }
 
-/* Home Css */
-.main {
-    left: 280px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    transition: left 0.6s;
-    transition-timing-function: ease;
+.toggle {
+    top: 25px;
+    left: 305px;
+    transition: left 0.5s ease;
 }
 
-.main p {
+.toggle i {
+    cursor: pointer;
+}
+
+.toggle.active {
+    left: 110px;
+}
+
+/* Home Css */
+.main {
+    margin-left: 280px;
+    transition: margin 0.6s ease;
+}
+
+.hero::before {
+    content: "";
+    background: transparent;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0px;
+    right: 0;
+}
+
+.hero h5,
+.hero h4 {
     font-weight: 600;
+}
+
+.hero span {
+    color: #00dada;
+    font-weight: 700;
 }
 
 /* Aurora Name */
 .name-aurora {
-    height: 160px;
     font-weight: 800;
-    font-size: 75px;
-    line-height: 75px;
+    font-size: 70px;
     margin: 0;
     background-clip: text;
     -webkit-background-clip: text;
@@ -181,10 +209,11 @@ body {
 }
 
 .main.active {
-    left: 85px;
+    margin-left: 85px;
 }
 
 .home-photo {
+    max-width: 40%;
     padding: 10px;
     border-radius: 50%;
     border: 5px solid var(--white);
@@ -218,11 +247,6 @@ body {
     100% {
         background-position: 0 0;
     }
-}
-
-.main h4 {
-    color: #00dada;
-    font-weight: 700;
 }
 
 
