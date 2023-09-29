@@ -30,7 +30,7 @@ export const SideBar = () => {
             <div className="profile py-4">
                 <img src={profile} alt="Profile Photo" className="img-fluid rounded-circle mx-auto" />
                 <h4 className="name-title mt-3 text-center">Jesus Piscoya</h4>
-                <div className="social-links mt-2 text-center">
+                <div className="social-links text-center mt-2">
                     <a href="https://www.linkedin.com/in/jesuspiscoya/" target="_blank">
                         <i className="fa-brands fa-linkedin fa-lg"></i>
                     </a>

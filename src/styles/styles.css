@@ -32,6 +32,7 @@ body {
     font-weight: 600;
     display: flex;
     overflow: hidden;
+    z-index: 1;
     flex-direction: column;
     backdrop-filter: blur(3px);
     transition: width 0.5s;
@@ -62,17 +63,19 @@ body {
     color: var(--blue-light);
 }
 
+.social-links {
+    z-index: 1;
+}
+
 .social-links a {
+    width: 36px;
+    height: 36px;
+    padding: 8px 0;
+    margin: 5px 6px;
     color: var(--white);
     display: inline-block;
     background: var(--secondary);
-    color: var(--white);
-    padding: 8px 0;
-    margin: 5px 6px;
     border-radius: 50%;
-    text-align: center;
-    width: 36px;
-    height: 36px;
 }
 
 .social-links a:hover {
@@ -197,9 +200,10 @@ body {
 
 /* Aurora Name */
 .name-aurora {
+    margin: 0;
     font-weight: 800;
     font-size: 70px;
-    margin: 0;
+    line-height: 78px;
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -261,22 +265,12 @@ body {
 
 
 @media (max-width: 991px) {
-    .navigation {
-        left: -300px;
-    }
-
-    .navigation.active {
-        width: 300px;
-        left: 0;
-    }
-
     .main {
-        width: 100%;
-        left: 0;
+        margin-left: 85px;
     }
 
     .main.active {
-        left: 300px;
+        margin-left: 85px;
     }
 
     .cardBox {

@@ -39,34 +39,32 @@ export const Home = () => {
     }, [])
 
     return (
-        <section className="hero d-flex justify-content-between align-items-center vh-100 px-5">
-            <div>
-                <h5>Hola👋, mi nombre es</h5>
-                <h1 className="name-aurora">Jesus</h1>
-                <h4 className="my-3 pb-4">
-                    Soy <span ref={textRef} />
-                </h4>
-                <a id="button-cv" href={cv} download="CV-JESUS-PISCOYA-BANCES.pdf" onClick={clickConffeti}>
-                    <i className="fa-solid fa-circle-down fa-lg"></i>Descargar CV
+        <section className="hero d-flex flex-column justify-content-center align-items-center text-center vh-100 px-5">
+            <h5>Hola👋, mi nombre es</h5>
+            <h1 className="name-aurora">Jesus Piscoya</h1>
+            <h4 className="my-3 pb-4">
+                Soy <span ref={textRef} />
+            </h4>
+            <a id="button-cv" href={cv} download="CV-JESUS-PISCOYA-BANCES.pdf" onClick={clickConffeti}>
+                <i className="fa-solid fa-circle-down fa-lg"></i>Descargar CV
+            </a>
+            <div className="social-links mt-4 pt-3">
+                <a href="https://www.linkedin.com/in/jesuspiscoya/" target="_blank">
+                    <i className="fa-brands fa-linkedin fa-lg"></i>
                 </a>
-                <div className="social-links mt-4 pt-3">
-                    <a href="https://www.linkedin.com/in/jesuspiscoya/" target="_blank">
-                        <i className="fa-brands fa-linkedin fa-lg"></i>
-                    </a>
-                    <a href="https://github.com/jesuspiscoya" target="_blank">
-                        <i className="fa-brands fa-github fa-lg"></i>
-                    </a>
-                    <a href="https://wa.me/51921104614" target="_blank">
-                        <i className="fa-brands fa-whatsapp fa-lg"></i>
-                    </a>
-                    <a href="mailto:correo@ejemplo.com">
-                        <i className="fa-solid fa-envelope fa-lg"></i>
-                    </a>
-                </div>
+                <a href="https://github.com/jesuspiscoya" target="_blank">
+                    <i className="fa-brands fa-github fa-lg"></i>
+                </a>
+                <a href="https://wa.me/51921104614" target="_blank">
+                    <i className="fa-brands fa-whatsapp fa-lg"></i>
+                </a>
+                <a href="mailto:correo@ejemplo.com">
+                    <i className="fa-solid fa-envelope fa-lg"></i>
+                </a>
             </div>
-            <div className="home-photo ms-5">
+            {/* <div className="home-photo ms-5">
                 <img src={profile} className="img-fluid rounded-circle" />
-            </div>
+            </div> */}
         </section>
     )
 }
