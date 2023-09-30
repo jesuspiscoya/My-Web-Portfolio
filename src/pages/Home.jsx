@@ -1,8 +1,7 @@
 import { useEffect, useRef } from "react"
 import Typed from "typed.js"
-import Confetti from "https://esm.run/canvas-confetti@1";
-import cv from "../assets/doc/CV-JESUS-PISCOYA-BANCES.pdf";
-import profile from "../assets/img/profile-photo.jpg";
+import Confetti from "https://esm.run/canvas-confetti@1"
+import cv from "../assets/doc/CV-JESUS-PISCOYA-BANCES.pdf"
 import "../styles/bg-stars.css"
 import "../styles/btn-conffeti.css"
 

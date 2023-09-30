@@ -2,7 +2,9 @@ import { SideBar } from "./components/SideBar"
 import { StarsBg } from "./components/StarsBg"
 import { ToggleBtn } from "./components/ToggleBtn"
 import { About } from "./pages/About"
+import { Education } from "./pages/Education"
 import { Home } from "./pages/Home"
+import { Projects } from "./pages/Projects"
 import { Skills } from "./pages/Skills"
 import "./styles/styles.css"
 
@@ -15,6 +17,8 @@ export const App = () => {
                 <Home />
                 <About />
                 <Skills />
+                <Education />
+                <Projects />
             </div>
             <ToggleBtn />
         </>

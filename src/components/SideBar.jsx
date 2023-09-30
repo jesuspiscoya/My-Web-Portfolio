@@ -66,19 +66,19 @@ export const SideBar = () => {
                         </a>
                     </li>
                     <li>
-                        <a href="#" className="ps-3">
+                        <a href="#educacion" className="ps-3">
                             <i className="fa-solid fa-graduation-cap fa-lg my-auto"></i>
                             <span className="title my-auto">Educación</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#" className="ps-3">
+                        <a href="#proyectos" className="ps-3">
                             <i className="fa-solid fa-cubes fa-lg my-auto"></i>
-                            <span className="title my-auto">Portfolio</span>
+                            <span className="title my-auto">Proyectos</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#" className="ps-3">
+                        <a href="#contacto" className="ps-3">
                             <i className="fa-solid fa-paper-plane fa-lg my-auto"></i>
                             <span className="title my-auto">Contacto</span>
                         </a>
