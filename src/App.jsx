@@ -2,6 +2,7 @@ import { SideBar } from "./components/SideBar"
 import { StarsBg } from "./components/StarsBg"
 import { ToggleBtn } from "./components/ToggleBtn"
 import { About } from "./pages/About"
+import { Contact } from "./pages/Contact"
 import { Education } from "./pages/Education"
 import { Home } from "./pages/Home"
 import { Projects } from "./pages/Projects"
@@ -19,6 +20,7 @@ export const App = () => {
                 <Skills />
                 <Education />
                 <Projects />
+                <Contact />
             </div>
             <ToggleBtn />
         </>
