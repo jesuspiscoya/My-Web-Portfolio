@@ -13,7 +13,7 @@ export const About = () => {
                     </div>
                     <div className="ms-5 ps-4 text-start fw-bolder">
                         <span>
-                            Soy un apasionado por la programación web y móvil, la tendencia tecnológica y la música. La disciplina, dedicación y compromiso son tres factores claves que me definen.💯
+                            Soy un apasionado por la programación, la tecnológica y la música. La disciplina, dedicación y compromiso son tres factores claves que me definen.💯
                         </span>
                         <br /><br />
                         <span>

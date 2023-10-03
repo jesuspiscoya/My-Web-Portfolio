@@ -77,12 +77,6 @@ export const SideBar = () => {
                             <span className="title my-auto">Proyectos</span>
                         </a>
                     </li>
-                    <li>
-                        <a href="#contacto" className="ps-3">
-                            <i className="fa-solid fa-paper-plane fa-lg my-auto"></i>
-                            <span className="title my-auto">Contacto</span>
-                        </a>
-                    </li>
                 </ul>
             </div>
         </div>

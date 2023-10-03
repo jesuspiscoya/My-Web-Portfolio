@@ -27,6 +27,10 @@ export const Skills = () => {
                                 <span>Bootstrap</span>
                             </div>
                             <div className="bg-none border px-3 py-2 rounded-3">
+                                <img src="https://pluspng.com/img-png/logo-jquery-png--400.png" height={"21px"} className="me-2" />
+                                <span>jQuery</span>
+                            </div>
+                            <div className="bg-none border px-3 py-2 rounded-3">
                                 <img src="https://logos-download.com/wp-content/uploads/2016/09/React_logo_logotype_emblem-700x626.png" height={"18px"} className="me-1" />
                                 <span>React Js</span>
                             </div>
