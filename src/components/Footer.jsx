@@ -1,7 +1,7 @@
 export const Footer = () => {
     return (
         <section className="footer text-center">
-            <div className="cards pt-0 rounded-0 d-flex flex-column justify-content-center px-2">
+            <div className="card border-0 pb-4 rounded-0 d-flex flex-column justify-content-center px-2">
                 <h1 className="name-aurora fs-2">Jesus Piscoya</h1>
                 <div className="social-links">
                     <a href="https://www.linkedin.com/in/jesuspiscoya/" target="_blank">
@@ -18,7 +18,7 @@ export const Footer = () => {
                     </a>
                 </div>
                 <h6 className="mt-4 mb-2 fw-bolder">Este sitio fué desarrollado con:</h6>
-                <div className="d-flex justify-content-center gap-2">
+                <div className="d-flex flex-wrap justify-content-center gap-2">
                     <div className="bg-none border border-primary px-2 py-1 rounded-2 ">
                         <img src="https://www.w3.org/html/logo/badge/html5-badge-h-solo.png" height={"14px"} className="me-1" />
                         <span>HTML</span>
@@ -44,7 +44,7 @@ export const Footer = () => {
                         <span>Vite Js</span>
                     </div>
                 </div>
-                <span class="mt-5">© {new Date().getFullYear()} Jesus Piscoya | Todos los derechos reservados.</span>
+                <span className="mt-4">© {new Date().getFullYear()} Jesus Piscoya | Todos los derechos reservados.</span>
             </div>
         </section>
     )

@@ -26,25 +26,34 @@ body {
 }
 
 /* Sidebar Css */
-.sidebar {
+.sidebar,
+.sidebar-movil {
     background: radial-gradient(ellipse at bottom, #0d233c 0%, #28292c83 100%);
-    width: 280px;
+    width: 85px;
     font-size: 15px;
     font-weight: 600;
     display: flex;
     overflow: hidden;
     z-index: 1;
     flex-direction: column;
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(10px);
     transition: width 0.5s;
     transition-timing-function: ease;
 }
 
+.sidebar-movil {
+    width: 0;
+}
+
 .profile {
     height: 0;
-    width: 280px;
+    width: 300px;
     opacity: 0;
     transition: height 0.5s, opacity 0.3s;
+}
+
+.sidebar-movil .profile {
+    opacity: 0;
 }
 
 .profile img {
@@ -55,8 +64,8 @@ body {
 }
 
 .profile.active {
-    height: 258px;
-    opacity: 1;
+    height: 0;
+    opacity: 0;
 }
 
 .name-title {
@@ -84,18 +93,24 @@ body {
 }
 
 .sidebar.active {
-    width: 85px;
+    width: 300px;
 }
 
-.sidebar.active .profile {
-    height: 0;
-    opacity: 0;
-    transition: height 0.7s ease, opacity 0.2s;
+.sidebar-movil.active {
+    width: 100%;
 }
 
-.sidebar.active .title {
-    opacity: 0;
-    transition: opacity 0.2s;
+.sidebar.active .profile,
+.sidebar-movil.active .profile {
+    height: 258px;
+    opacity: 1;
+    transition: height 0.7s ease, opacity 0.9s;
+}
+
+.sidebar.active .title,
+.sidebar-movil.active .title {
+    opacity: 1;
+    transition: opacity 1.2s;
 }
 
 .navigation ul li {
@@ -118,9 +133,10 @@ body {
 }
 
 .navigation ul li a .title {
+    opacity: 0;
     padding: 0 14px;
     white-space: nowrap;
-    transition: opacity 1.5s;
+    transition: opacity 0.2s;
 }
 
 .navigation ul li.active {
@@ -217,7 +233,7 @@ body {
 }
 
 .home-photo {
-    max-width: 40%;
+    max-width: 70%;
     padding: 10px;
     border-radius: 50%;
     border: 5px solid var(--white);
@@ -229,6 +245,30 @@ body {
         0 80px 60px -40px #034bf4,
         -60px 0 100px -20px #5303f4,
         0 -80px 60px -40px #9803f4;
+}
+
+.about-text {
+    font-weight: 500;
+}
+
+.about-text a{
+    text-decoration: none;
+    font-weight: 700;
+    color: #009dd6;
+    transition: color 0.4s;
+}
+
+.about-text a:hover {
+    color: var(--blue-light);
+}
+
+.footer {
+    margin-left: 280px;
+    transition: margin-left 0.5s ease;
+}
+
+.footer.active {
+    margin-left: 85px;
 }
 
 @keyframes animate {
@@ -257,6 +297,59 @@ body {
 
 
 
+@media (max-width: 440px) {
+
+    .sidebar,
+    .sidebar.active {
+        width: 0;
+    }
+
+    .toggle,
+    .toggle.active {
+        left: 25px;
+        z-index: 1;
+    }
+
+    .main,
+    .main.active,
+    .footer,
+    .footer.active {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 440px) {
+
+    .sidebar-movil,
+    .sidebar-movil.active {
+        width: 0;
+    }
+
+    .toggle,
+    .toggle.active {
+        left: 25px;
+        z-index: 1;
+    }
+
+    .main,
+    .main.active,
+    .footer,
+    .footer.active {
+        margin-left: 85px;
+    }
+}
+
+@media (min-width: 992px) {
+    .main.active {
+        margin-left: 300px;
+    }
+}
+
+@media (min-width: 992px) and (max-width:1500px) {
+    .main.active #skills .row {
+        width: 90%;
+    }
+}
 
 
 
@@ -264,7 +357,7 @@ body {
 
 
 
-@media (max-width: 991px) {
+/* @media (max-width: 991px) {
     .main {
         margin-left: 85px;
     }
@@ -275,6 +368,10 @@ body {
 
     .cardBox {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer {
+        margin-left: 85px;
     }
 }
 
@@ -317,7 +414,7 @@ body {
     }
 
     .toggle {
-        z-index: 10001;
+        z-index: 1;
     }
 
     .main.active .toggle {
@@ -326,4 +423,4 @@ body {
         right: 0;
         left: initial;
     }
-}
+} */

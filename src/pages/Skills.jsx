@@ -3,11 +3,11 @@ import profile from "../assets/img/profile-photo.jpg";
 export const Skills = () => {
     return (
         <section id="skills" className="text-center py-5">
-            <h4 className="fw-bold text-warning">Skills</h4>
+            <h2 className="fw-bold text-warning">Skills</h2>
             <div className="line border w-25 mx-auto border-warning mb-5"></div>
-            <div className="row w-75 mx-auto">
-                <div className="col-12 col-lg-6">
-                    <div className="cards d-flex flex-column justify-content-center">
+            <div className="row g-3 g-xl-4 mx-auto col-12 col-sm-9 col-md-11 col-lg-11 col-xl-9 col-xxl-7">
+                <div className="col-12 col-md-6">
+                    <div className="card py-4 px-3 d-flex flex-column justify-content-center">
                         <h5 className="fw-bolder">Frontend</h5>
                         <div className="d-flex flex-wrap gap-3 justify-content-center mt-3">
                             <div className="bg-none border px-3 py-2 rounded-3 ">
@@ -46,7 +46,7 @@ export const Skills = () => {
                     </div>
                 </div>
                 <div className="col-12 col-md-6">
-                    <div className="cards d-flex flex-column justify-content-center h-100">
+                    <div className="card py-4 px-3 d-flex flex-column justify-content-center h-100">
                         <h5 className="fw-bolder">Backend</h5>
                         <div className="d-flex flex-wrap gap-3 justify-content-center my-auto">
                             <div className="bg-none border px-3 py-2 rounded-3 ">
@@ -76,11 +76,8 @@ export const Skills = () => {
                         </div>
                     </div>
                 </div>
-            </div>
-            <div className="my-4"></div>
-            <div className="row w-75 mx-auto">
                 <div className="col-12 col-md-6">
-                    <div className="cards d-flex flex-column justify-content-center">
+                    <div className="card py-4 px-3 d-flex flex-column justify-content-center">
                         <h5 className="fw-bolder">Android</h5>
                         <div className="d-flex flex-wrap gap-3 justify-content-center mt-3">
                             <div className="bg-none border px-3 py-2 rounded-3 ">
@@ -115,7 +112,7 @@ export const Skills = () => {
                     </div>
                 </div>
                 <div className="col-12 col-md-6">
-                    <div className="cards d-flex flex-column justify-content-center h-100">
+                    <div className="card py-4 px-3 d-flex flex-column justify-content-center h-100">
                         <h5 className="fw-bolder">Otros</h5>
                         <div className="d-flex flex-wrap gap-3 justify-content-center my-auto
                         ">

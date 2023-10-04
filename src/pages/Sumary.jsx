@@ -1,7 +1,7 @@
 import Confetti from "https://esm.run/canvas-confetti@1"
 import "../styles/btn-conffeti.css"
 
-export const Education = () => {
+export const Sumary = () => {
     const clickConffeti = () => {
         Confetti({
             particleCount: 35,
@@ -17,7 +17,7 @@ export const Education = () => {
     }
 
     return (
-        <section id="educacion" className="text-center py-5">
+        <section id="resumen" className="text-center py-5">
             <h2 className="fw-bold text-warning">Resumen</h2>
             <div className="line border w-25 mx-auto border-warning mb-5"></div>
             <div className="row">
