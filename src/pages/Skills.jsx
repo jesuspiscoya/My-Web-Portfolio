@@ -70,7 +70,7 @@ export const Skills = () => {
                                 <span>MySQL</span>
                             </div>
                             <div className="bg-none border px-3 py-2 rounded-3">
-                                <img src="https://www.bajalogics.com/wp-content/uploads/2018/04/SQL-Server-Logo.png" height={"20px"} className="me-1" />
+                                <img src="https://martinsblog.dk/wp-content/uploads/2021/07/sql-logo.png" height={"19px"} className="me-1" />
                                 <span>SQL Server</span>
                             </div>
                         </div>

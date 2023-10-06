@@ -32,10 +32,8 @@ body {
     width: 85px;
     font-size: 15px;
     font-weight: 600;
-    display: flex;
     overflow: hidden;
     z-index: 1;
-    flex-direction: column;
     backdrop-filter: blur(50px);
     transition: width 0.5s;
     transition-timing-function: ease;
@@ -186,8 +184,9 @@ body {
 }
 
 .toggle {
+    left: 110px;
     top: 25px;
-    left: 305px;
+    z-index: 2;
     transition: left 0.5s ease;
 }
 
@@ -196,7 +195,7 @@ body {
 }
 
 .toggle.active {
-    left: 110px;
+    left: 325px;
 }
 
 /* Home Css */
@@ -317,7 +316,6 @@ body {
     .toggle,
     .toggle.active {
         left: 25px;
-        z-index: 1;
     }
 
     .main,
@@ -333,12 +331,6 @@ body {
     .sidebar-movil,
     .sidebar-movil.active {
         width: 0;
-    }
-
-    .toggle,
-    .toggle.active {
-        left: 25px;
-        z-index: 1;
     }
 
     .main,

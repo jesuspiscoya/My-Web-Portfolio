@@ -37,7 +37,7 @@ export const SideBar = () => {
 
     return (
         <nav>
-            <div className="sidebar position-fixed h-100">
+            <div className="sidebar d-flex flex-column position-fixed h-100">
                 <div className="profile mx-auto py-4">
                     <img src={profile} alt="Profile Photo" className="img-fluid rounded-circle mx-auto" />
                     <h4 className="name-title mt-3 text-center">Jesus Piscoya</h4>
@@ -91,7 +91,7 @@ export const SideBar = () => {
                     </ul>
                 </div>
             </div>
-            <div className="sidebar-movil position-fixed h-100">
+            <div className="sidebar-movil d-flex flex-column position-fixed h-100">
                 <div className="profile mx-auto py-4">
                     <img src={profile} alt="Profile Photo" className="img-fluid rounded-circle mx-auto" />
                     <h4 className="name-title mt-3 text-center">Jesus Piscoya</h4>

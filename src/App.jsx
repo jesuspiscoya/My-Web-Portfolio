@@ -11,6 +11,7 @@ import "./styles/styles.css"
 export const App = () => {
     return (
         <>
+            <ToggleBtn />
             <SideBar />
             <div className="main position-relative d-flex flex-column px-md-3 px-xl-5">
                 <Home />
@@ -20,7 +21,6 @@ export const App = () => {
                 <Projects />
             </div>
             <Footer />
-            <ToggleBtn />
         </>
     )
 }

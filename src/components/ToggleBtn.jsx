@@ -1,9 +1,11 @@
 export const ToggleBtn = () => {
     const clickToggle = () => {
+        const toggle = document.querySelector(".toggle")
         const sideBar = document.querySelector(".sidebar")
         const sideBarMovil = document.querySelector(".sidebar-movil")
         const main = document.querySelector(".main")
         const footer = document.querySelector(".footer")
+        toggle.classList.toggle("active")
         sideBar.classList.toggle("active")
         sideBarMovil.classList.toggle("active")
         main.classList.toggle("active")
