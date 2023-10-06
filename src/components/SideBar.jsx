@@ -51,7 +51,7 @@ export const SideBar = () => {
                         <a href="https://wa.me/51921104614" target="_blank">
                             <i className="fa-brands fa-whatsapp fa-lg"></i>
                         </a>
-                        <a href="mailto:correo@ejemplo.com">
+                        <a href="mailto:jesuspiscoya0351@gmail.com">
                             <i className="fa-solid fa-envelope fa-lg"></i>
                         </a>
                     </div>
@@ -105,7 +105,7 @@ export const SideBar = () => {
                         <a href="https://wa.me/51921104614" target="_blank">
                             <i className="fa-brands fa-whatsapp fa-lg"></i>
                         </a>
-                        <a href="mailto:correo@ejemplo.com">
+                        <a href="mailto:jesuspiscoya0351@gmail.com">
                             <i className="fa-solid fa-envelope fa-lg"></i>
                         </a>
                     </div>
