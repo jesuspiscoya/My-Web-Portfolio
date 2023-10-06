@@ -14,7 +14,7 @@
     --green-light: #00e955;
     --blue-light: #00e1ff;
     --gray: #999;
-    --black: #222;
+    --black: #101010;
 }
 
 body {
@@ -299,12 +299,17 @@ body {
 }
 
 .footer {
-    margin-left: 280px;
+    margin-left: 85px;
+    background: radial-gradient(ellipse at bottom, #22067083 0, #000000ff 70%);
     transition: margin-left 0.5s ease;
 }
 
+.footer .name-aurora {
+    line-height: 1.2;
+}
+
 .footer.active {
-    margin-left: 85px;
+    margin-left: 300px;
 }
 
 @keyframes animate {
@@ -366,6 +371,11 @@ body {
     .skill {
         font-size: 13px;
     }
+
+    .footer span {
+        font-size: 13px;
+        color: var(--gray);
+    }
 }
 
 @media (min-width: 450px) {
@@ -411,10 +421,17 @@ body {
     .skill {
         font-size: 12px;
     }
+
+    .footer span {
+        font-size: 13px;
+        color: var(--gray);
+    }
 }
 
 @media (min-width: 992px) {
-    .main.active {
+
+    .main.active,
+    .footer.active {
         margin-left: 300px;
     }
 
@@ -440,77 +457,3 @@ body {
         font-size: 15px;
     }
 }
-
-
-
-
-
-
-
-/* @media (max-width: 991px) {
-    .main {
-        margin-left: 85px;
-    }
-
-    .main.active {
-        margin-left: 85px;
-    }
-
-    .cardBox {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .footer {
-        margin-left: 85px;
-    }
-}
-
-@media (max-width: 768px) {
-    .details {
-        grid-template-columns: 1fr;
-    }
-
-    .recentOrders {
-        overflow-x: auto;
-    }
-
-    .status.inProgress {
-        white-space: nowrap;
-    }
-}
-
-@media (max-width: 480px) {
-    .cardBox {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .cardHeader h2 {
-        font-size: 20px;
-    }
-
-    .user {
-        min-width: 40px;
-    }
-
-    .navigation {
-        width: 100%;
-        left: -100%;
-        z-index: 1000;
-    }
-
-    .navigation.active {
-        width: 100%;
-        left: 0;
-    }
-
-    .toggle {
-        z-index: 1;
-    }
-
-    .main.active .toggle {
-        color: #fff;
-        position: fixed;
-        right: 0;
-        left: initial;
-    }
-} */

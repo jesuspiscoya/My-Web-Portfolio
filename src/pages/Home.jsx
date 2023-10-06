@@ -60,9 +60,6 @@ export const Home = () => {
                     <i className="fa-solid fa-envelope fa-lg"></i>
                 </a>
             </div>
-            {/* <div className="home-photo ms-5">
-                <img src={profile} className="img-fluid rounded-circle" />
-            </div> */}
         </section>
     )
 }
