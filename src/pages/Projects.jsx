@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Projects = () => {
     return (
-        <section id="proyectos" className="text-center py-5">
+        <section id="projects" className="text-center py-5">
             <h2 className="fw-bold text-warning">Proyectos</h2>
             <div className="line border w-25 mx-auto border-warning mb-5"></div>
             <div className="row g-4 mx-auto px-4">

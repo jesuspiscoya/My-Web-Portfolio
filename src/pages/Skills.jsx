@@ -103,7 +103,7 @@ export const Skills = () => {
                                 <span>Flutter</span>
                             </div>
                             <div className="skill border border-secondary px-3 py-2">
-                                <img src="https://developer.android.com/static/studio/images/new-studio-logo-1_1920.png" height={"21px"} className="me-2" />
+                                <img src="https://keycombiner.com/media/application-icons/androidstudio.png" height={"19px"} className="me-2" />
                                 <span>Android Studio</span>
                             </div>
                         </div>

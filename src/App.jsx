@@ -5,7 +5,7 @@ import { About } from "./pages/About"
 import { Home } from "./pages/Home"
 import { Projects } from "./pages/Projects"
 import { Skills } from "./pages/Skills"
-import { Sumary } from "./pages/Sumary"
+import { Summary } from "./pages/Summary"
 import "./styles/styles.css"
 
 export const App = () => {
@@ -17,7 +17,7 @@ export const App = () => {
                 <Home />
                 <About />
                 <Skills />
-                <Sumary />
+                <Summary />
                 <Projects />
             </div>
             <Footer />

@@ -35,6 +35,11 @@ export const SideBar = () => {
             : profile.classList.remove('active')
     }
 
+    const clickTitle = () => {
+        const sideBarMovil = document.querySelector(".sidebar-movil")
+        sideBarMovil.classList.toggle("active")
+    }
+
     return (
         <nav>
             <div className="sidebar d-flex flex-column position-fixed h-100">
@@ -77,13 +82,13 @@ export const SideBar = () => {
                             </a>
                         </li>
                         <li>
-                            <a href="#resumen" className="ps-3">
+                            <a href="#summary" className="ps-3">
                                 <i className="fa-solid fa-graduation-cap fa-lg my-auto"></i>
                                 <span className="title my-auto">Resumen</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#proyectos" className="ps-3">
+                            <a href="#projects" className="ps-3">
                                 <i className="fa-solid fa-cubes fa-lg my-auto"></i>
                                 <span className="title my-auto">Proyectos</span>
                             </a>
@@ -113,31 +118,31 @@ export const SideBar = () => {
                 <div className="navigation my-auto">
                     <ul className="ps-3 text-center mb-0" ref={navMovilRef}>
                         <li className="active">
-                            <a href="#" className="ps-3">
+                            <a href="#" className="ps-3" onClick={clickTitle}>
                                 <i className="fa-solid fa-house fa-lg my-auto"></i>
                                 <span className="title my-auto">Inicio</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#about" className="ps-3">
+                            <a href="#about" className="ps-3" onClick={clickTitle}>
                                 <i className="fa-solid fa-id-badge fa-lg my-auto"></i>
                                 <span className="title my-auto">Sobre mi</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#skills" className="ps-3">
+                            <a href="#skills" className="ps-3" onClick={clickTitle}>
                                 <i className="fa-solid fa-bolt fa-lg my-auto"></i>
                                 <span className="title my-auto">Skills</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#resumen" className="ps-3">
+                            <a href="#summary" className="ps-3" onClick={clickTitle}>
                                 <i className="fa-solid fa-graduation-cap fa-lg my-auto"></i>
                                 <span className="title my-auto">Resumen</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#proyectos" className="ps-3">
+                            <a href="#projects" className="ps-3" onClick={clickTitle}>
                                 <i className="fa-solid fa-cubes fa-lg my-auto"></i>
                                 <span className="title my-auto">Proyectos</span>
                             </a>

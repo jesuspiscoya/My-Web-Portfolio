@@ -1,7 +1,6 @@
 import { useEffect, useRef } from "react"
 import Typed from "typed.js"
 import Confetti from "https://esm.run/canvas-confetti@1"
-import cv from "../assets/doc/CV-JESUS-PISCOYA-BANCES.pdf"
 import "../styles/btn-conffeti.css"
 
 export const Home = () => {
@@ -43,7 +42,7 @@ export const Home = () => {
             <h4 className="my-3 pb-4">
                 Soy <span ref={textRef} />
             </h4>
-            <a id="button-cv" href={cv} download="CV-JESUS-PISCOYA-BANCES.pdf" onClick={clickConffeti}>
+            <a id="button-cv" href={"http://bit.ly/jesuspiscoyacv"} download="CV-JESUS-PISCOYA-BANCES.pdf" onClick={clickConffeti}>
                 <i className="fa-solid fa-circle-down fa-lg"></i>Descargar CV
             </a>
             <div className="social-links mt-4 pt-3">

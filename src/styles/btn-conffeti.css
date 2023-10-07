@@ -1,12 +1,13 @@
 #button-cv {
     color: var(--white);
-    background: #404663;
+    background: #1c265a;
     text-decoration: none;
     font-weight: 700;
     z-index: 0;
     padding: 15px 25px;
+    border: 1px solid transparent;
     border-radius: 0.5em;
-    transition: background 0.3s, box-shadow 0.3s;
+    transition: all 0.3s;
     box-shadow:
         0px 1.7px 2.2px rgba(0, 0, 0, 0.02),
         0px 4px 5.3px rgba(0, 0, 0, 0.028),
@@ -17,16 +18,12 @@
 }
 
 #button-cv i {
-    transform: translateY(-1.5px);
     transition: transform 0.4s ease;
     margin-right: 12px;
 }
 
 #button-cv:hover {
-    background: var(--blue-light);
-    box-shadow: 0 0.5em 0.5em -0.4em var(--blue-light);
-}
-
-#button-cv:hover i {
-    transform: translateY(2px);
+    background: #071344;
+    border: 1px solid var(--blue-light);
+    box-shadow: 0 5px 10px -7px var(--blue-light);
 }
