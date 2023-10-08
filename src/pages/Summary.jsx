@@ -20,7 +20,7 @@ export const Summary = () => {
         <section id="summary" className="text-center py-5">
             <h2 className="fw-bold text-warning">Resumen</h2>
             <div className="line border w-25 mx-auto border-warning mb-5"></div>
-            <div className="row mx-auto g-5 g-md-4 col-sm-10 col-md-12 col-xl-10 col-xxl-9">
+            <div className="row mx-auto g-5 g-md-4 g-xxl-5 col-sm-10 col-md-12 col-xl-10 col-xxl-9">
                 <div className="col-12 col-md-6">
                     <h3 className="fw-bolder text-info">Educación</h3>
                     <div className="d-flex mt-3">

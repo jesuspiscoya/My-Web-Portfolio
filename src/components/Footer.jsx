@@ -1,6 +1,6 @@
 export const Footer = () => {
     return (
-        <section className="footer text-center d-flex flex-column justify-content-center py-3 px-2">
+        <div className="footer text-center d-flex flex-column justify-content-center py-3 px-2">
             <h1 className="name-aurora fs-2">Jesus Piscoya</h1>
             <div className="social-links mt-1">
                 <a href="https://www.linkedin.com/in/jesuspiscoya/" target="_blank">
@@ -44,6 +44,6 @@ export const Footer = () => {
                 </div>
             </div>
             <span className="mt-4">© {new Date().getFullYear()} Jesus Piscoya | Todos los derechos reservados.</span>
-        </section>
+        </div>
     )
 }

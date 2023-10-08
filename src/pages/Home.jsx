@@ -36,11 +36,11 @@ export const Home = () => {
     }, [])
 
     return (
-        <section className="hero d-flex flex-column justify-content-center align-items-center text-center vh-100 px-5">
+        <section id="home" className="hero d-flex flex-column justify-content-center align-items-center text-center vh-100 px-5">
             <h5>Hola👋, mi nombre es</h5>
-            <h1 className="name-aurora">Jesus Piscoya</h1>
+            <h1 className="name-aurora m-0">Jesus Piscoya</h1>
             <h4 className="my-3 pb-4">
-                Soy <span ref={textRef} />
+                Soy <span ref={textRef} className="fw-bold" />
             </h4>
             <a id="button-cv" href={"http://bit.ly/jesuspiscoyacv"} download="CV-JESUS-PISCOYA-BANCES.pdf" onClick={clickConffeti}>
                 <i className="fa-solid fa-circle-down fa-lg"></i>Descargar CV

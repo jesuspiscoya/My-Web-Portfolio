@@ -24,10 +24,9 @@ body {
 }
 
 /* Sidebar Css */
-.sidebar,
-.sidebar-movil {
+.sidebar {
     background: radial-gradient(ellipse at bottom, #230953a8 0, #0f0f31b3 70%);
-    width: 85px;
+    width: 300px;
     font-size: 15px;
     font-weight: 600;
     overflow: hidden;
@@ -37,35 +36,19 @@ body {
     transition-timing-function: ease;
 }
 
-.sidebar-movil {
-    width: 0;
-}
-
 .profile {
-    height: 0;
-    width: 300px;
-    opacity: 0;
-    transition: height 0.5s, opacity 0.3s;
-}
-
-.sidebar-movil .profile {
-    opacity: 0;
+    height: 239px;
+    width: 192px;
+    opacity: 1;
+    transition: height 0.6s, opacity 0.2s;
 }
 
 .profile img {
-    display: block;
-    width: 40%;
+    width: 65%;
     border: 7px solid var(--secondary);
-    transition: width 0.9s, border 0.7s;
-}
-
-.profile.active {
-    height: 0;
-    opacity: 0;
 }
 
 .name-title {
-    font-weight: 700;
     color: var(--blue-light);
 }
 
@@ -76,7 +59,7 @@ body {
 .social-links a {
     width: 36px;
     height: 36px;
-    padding: 8px 0;
+    padding: 6px 0;
     margin: 5px 6px;
     font-size: 16px;
     border-radius: 50%;
@@ -90,39 +73,14 @@ body {
     background: #00acfb;
 }
 
-.fa-lg {
-    vertical-align: 0;
-}
-
-.sidebar.active {
-    width: 300px;
-}
-
-.sidebar-movil.active {
-    width: 100%;
-}
-
-.sidebar.active .profile,
-.sidebar-movil.active .profile {
-    height: 258px;
-    opacity: 1;
-    transition: height 0.7s ease, opacity 0.9s;
-}
-
-.sidebar.active .title,
-.sidebar-movil.active .title {
-    opacity: 1;
-    transition: opacity 1.2s;
-}
-
-.navigation ul li {
+.navigation li {
     position: relative;
     list-style: none;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
 }
 
-.navigation ul li a {
+.navigation a {
     height: 60px;
     display: flex;
     text-decoration: none;
@@ -130,31 +88,31 @@ body {
     transition: color 0.5s;
 }
 
-.navigation ul li a i {
-    min-width: 40px;
+.navigation a:hover {
+    color: var(--blue-light);
 }
 
-.navigation ul li a .title {
-    opacity: 0;
+.navigation a i {
+    min-width: 35px;
+}
+
+.navigation a .title {
+    opacity: 1;
     padding: 0 14px;
     white-space: nowrap;
     transition: opacity 0.2s;
 }
 
-.navigation ul li.active {
+.navigation li.active {
     background: var(--primary);
 }
 
-.sidebar-movil .navigation ul li.active {
-    background: none;
-}
-
-.navigation ul li.active a {
+.navigation li.active a {
     color: var(--blue-light) !important;
     text-shadow: 0 0 8px #009be9;
 }
 
-.navigation ul li.active::before {
+.navigation li.active::before {
     content: "";
     position: absolute;
     background: transparent;
@@ -166,7 +124,7 @@ body {
     box-shadow: 5px 5px 0 5px var(--primary);
 }
 
-.navigation ul li.active::after {
+.navigation li.active::after {
     content: "";
     position: absolute;
     background: transparent;
@@ -178,33 +136,18 @@ body {
     box-shadow: 5px -5px 0 5px var(--primary);
 }
 
-.sidebar-movil .navigation ul li.active::before,
-.sidebar-movil .navigation ul li.active::after {
-    display: none;
-}
-
-.navigation ul li a:hover {
-    color: var(--green-light);
-}
-
 .toggle {
-    left: 110px;
+    left: 35px;
     top: 25px;
     z-index: 2;
-    transition: left 0.5s ease;
-}
-
-.toggle i {
+    display: none;
     cursor: pointer;
-}
-
-.toggle.active {
-    left: 325px;
+    transition: left 0.5s ease;
 }
 
 /* Home Page */
 .main {
-    margin-left: 280px;
+    margin-left: 300px;
     transition: margin 0.6s ease;
 }
 
@@ -223,12 +166,10 @@ body {
 }
 
 .hero span {
-    color: #00dada;
-    font-weight: 700;
+    color: var(--blue-light);
 }
 
 .name-aurora {
-    margin: 0;
     font-weight: 800;
     font-size: 70px;
     background-clip: text;
@@ -238,15 +179,10 @@ body {
     animation: animate 30s ease infinite;
 }
 
-.main.active {
-    margin-left: 85px;
-}
-
 /* About Page */
 .home-photo {
     max-width: 80%;
     padding: 3%;
-    border-radius: 50%;
     border: 5px solid var(--white);
     box-shadow: 0 0 10px var(--white);
 }
@@ -283,14 +219,13 @@ body {
     backdrop-filter: blur(40px);
     background-color: #0d12279f;
     border: 1px solid var(--blue-light);
-    box-shadow: #120681d3 0 0 10px;
-    transition: scale 0.4s ease;
+    box-shadow: #120681c3 0 0 10px;
+    transition: scale 0.3s ease;
 }
 
 .skill {
     border-radius: 10px;
     color: var(--gray);
-    font-size: 14px;
 }
 
 .card:hover {
@@ -314,9 +249,10 @@ body {
 }
 
 .card-summary {
+    cursor: default;
     border: 1px solid var(--blue-light);
     border-radius: 8px;
-    box-shadow: #0c044fd3 0 0 10px;
+    box-shadow: #120681c3 0 0 10px;
     transition: background 0.2s, translate 0.3s;
 }
 
@@ -327,13 +263,13 @@ body {
 
 /* Footer */
 .footer {
-    margin-left: 85px;
+    margin-left: 300px;
     background: radial-gradient(ellipse at bottom, #000000ff 0, #1c055a83 70%);
     transition: margin-left 0.5s ease;
 }
 
-.footer.active {
-    margin-left: 300px;
+.footer span {
+    color: var(--gray);
 }
 
 @keyframes animate {
@@ -358,14 +294,108 @@ body {
     }
 }
 
-@media (max-width: 450px) {
-    body {
+@media (max-width: 1400px) {
+
+    .toggle,
+    .toggle.active {
+        display: block;
+    }
+
+    .sidebar {
+        width: 85px;
+    }
+
+    .sidebar.active {
+        width: 300px;
+    }
+
+    .profile {
+        height: 0;
+        opacity: 0;
+    }
+
+    .navigation a .title {
+        opacity: 0;
+    }
+
+    .sidebar.active .profile {
+        height: 239px;
+        opacity: 1;
+        transition: height 0.4s ease, opacity 1s;
+    }
+
+    .sidebar.active .title {
+        opacity: 1;
+        transition: opacity 1.2s;
+    }
+
+    .main,
+    .footer {
+        margin-left: 85px;
+    }
+
+    .main.active,
+    .footer.active {
+        margin-left: 300px;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .sidebar.active .navigation li.active,
+    .sidebar.active .navigation li.active::before,
+    .sidebar.active .navigation li.active::after {
+        background: none;
+        content: none;
+    }
+
+    .main.active,
+    .footer.active {
+        margin-left: 85px;
+    }
+
+    .about-text {
+        font-size: 15px;
+    }
+
+    .about-text a {
         font-size: 14px;
     }
 
-    .sidebar,
-    .sidebar.active {
+    .skill,
+    .footer span {
+        font-size: 13px;
+    }
+
+    .card-summary h5 {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 450px) {
+    .sidebar {
         width: 0;
+    }
+
+    .sidebar.active {
+        width: 100%;
+    }
+
+    .sidebar>* {
+        opacity: 0;
+        transition: opacity 0.2s;
+    }
+
+    .sidebar.active>* {
+        opacity: 1;
+        transition: opacity 0.8s;
+    }
+
+    .navigation li.active,
+    .navigation li.active::before,
+    .navigation li.active::after {
+        background: none;
+        content: none;
     }
 
     .toggle,
@@ -386,49 +416,13 @@ body {
         height: 115px;
     }
 
-    .about-text {
-        font-size: 15px;
-    }
-
-    .about-text a {
-        font-size: 14px;
-    }
-
     #skills .row .col-12 {
         max-width: 340px;
-    }
-
-    .skill {
-        font-size: 13px;
-    }
-
-    .card-summary h5 {
-        font-size: 17px;
     }
 
     .footer .name-aurora {
         line-height: 1.1;
         height: auto;
-    }
-
-    .footer span {
-        font-size: 13px;
-        color: var(--gray);
-    }
-}
-
-@media (min-width: 450px) {
-
-    .sidebar-movil,
-    .sidebar-movil.active {
-        width: 0;
-    }
-
-    .main,
-    .main.active,
-    .footer,
-    .footer.active {
-        margin-left: 85px;
     }
 }
 
@@ -440,63 +434,28 @@ body {
 }
 
 @media (min-width: 450px) and (max-width: 992px) {
-    body {
-        font-size: 14px;
-    }
-
-    .about-text {
-        font-size: 15px;
-    }
-
-    .about-text a {
-        font-size: 14px;
-    }
-
     #skills .row .col-12 {
         max-width: 480px;
         font-size: 12px;
     }
-
-    .skill {
-        font-size: 12px;
-    }
-
-    .card-summary h5 {
-        font-size: 17px;
-    }
-
-    .footer span {
-        font-size: 13px;
-        color: var(--gray);
-    }
 }
 
 @media (min-width: 992px) {
-
-    .main.active,
-    .footer.active {
-        margin-left: 300px;
-    }
-
     #skills .row .col-12 {
         max-width: 450px;
     }
 }
 
-@media (min-width: 992px) and (max-width:1500px) {
-    .about-text {
-        font-size: 15px;
-    }
-
-    .about-text a {
-        font-size: 14px;
-    }
-
+@media (min-width: 992px) and (max-width:1400px) {
     .main.active #skills .row {
         width: 90%;
     }
 
     .main.active #about .about-text {
         font-size: 15px;
+    }
+
+    .main.active #about .about-text a {
+        font-size: 14px;
     }
 }
