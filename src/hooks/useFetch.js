@@ -1,12 +1,27 @@
 import { useEffect, useState } from "react"
 
 export const useFetch = (url) => {
+    const listRepos = []
     const [repo, setRepo] = useState({
         data: null,
         isLoading: true,
         error: null
     })
-    const listRepos = []
+
+    const getIndexRepo = (nombre) => {
+        const repoIndex = {
+            'Clinica-App': 0,
+            'Sistema-Ventas': 1,
+            'YutWu-Delivery-App': 2,
+            'Biblioteca-Nacional': 3,
+            'To-do-App-Flutter': 4,
+            'Weather-React': 5,
+            'Chat-App': 6,
+            'Peliculas-React': 7,
+            'Carrito-React': 8
+        }
+        return repoIndex[nombre]
+    }
 
     const getFetch = async () => {
         try {
@@ -14,13 +29,13 @@ export const useFetch = (url) => {
             const data = await response.json()
 
             data.map(({ id, name, description, html_url, topics }) => {
-                listRepos.push({
+                listRepos[getIndexRepo(name)] = {
                     id: id,
-                    nombre: name,
+                    nombre: name.replaceAll('-', ' '),
                     descripcion: description,
                     url: html_url,
                     topics: topics
-                })
+                }
             })
 
             setRepo({

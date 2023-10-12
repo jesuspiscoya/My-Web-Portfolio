@@ -19,7 +19,7 @@ export const Footer = () => {
             <h6 className="mt-4 mb-2 fw-bolder">Este sitio fué desarrollado con:</h6>
             <div className="d-flex flex-wrap justify-content-center gap-2">
                 <div className="bg-none border border-primary px-2 py-1 rounded-2">
-                    <img src="https://logos-download.com/wp-content/uploads/2016/09/React_logo_logotype_emblem-700x626.png" height={"13px"} className="me-1" />
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" height={"14px"} className="me-1" />
                     <span>React Js</span>
                 </div>
                 <div className="bg-none border border-primary px-2 py-1 rounded-2 ">
@@ -27,15 +27,15 @@ export const Footer = () => {
                     <span>HTML</span>
                 </div>
                 <div className="bg-none border border-primary px-2 py-1 rounded-2">
-                    <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/370607/images/5195121/badge-css-3-512.png" height={"14px"} className="me-1" />
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg" height={"14px"} className="me-1" />
                     <span>CSS</span>
                 </div>
                 <div className="bg-none border border-primary px-2 py-1 rounded-2">
-                    <img src="https://cdn.iconscout.com/icon/free/png-256/javascript-2752148-2284965.png" height={"14px"} className="me-2" />
+                    <img src="https://www.svgrepo.com/show/349419/javascript.svg" height={"15px"} className="me-2" />
                     <span>JavaScript</span>
                 </div>
                 <div className="bg-none border border-primary px-2 py-1 rounded-2">
-                    <img src="https://them.es/starter-bootstrap/wp-content/uploads/sites/7/2021/05/bootstrap-logo.png" height={"14px"} className="me-1" />
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg" height={"14px"} className="me-1" />
                     <span>Bootstrap</span>
                 </div>
                 <div className="bg-none border border-primary px-2 py-1 rounded-2">
