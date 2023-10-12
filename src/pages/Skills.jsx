@@ -3,11 +3,11 @@ export const Skills = () => {
         <section id="skills" className="text-center py-5">
             <h2 className="fw-bold text-warning">Skills</h2>
             <div className="line border w-25 mx-auto border-warning mb-5"></div>
-            <div className="row g-4 mx-auto justify-content-center col-md-11 col-lg-10 col-xl-9 col-xxl-8">
+            <div className="row g-4 mx-auto col-md-11 col-lg-10 col-xl-9 col-xxl-8">
                 <div className="col-12 col-md-6">
-                    <div className="card py-4 px-3 d-flex flex-column justify-content-center">
-                        <h5 className="fw-bolder">Frontend</h5>
-                        <div className="d-flex flex-wrap gap-3 justify-content-center mt-3">
+                    <div className="card py-4 px-3 h-100">
+                        <h5 className="fw-bolder mb-3">Frontend</h5>
+                        <div className="d-flex flex-wrap gap-3 justify-content-center my-auto">
                             <div className="skill border border-secondary px-3 py-2">
                                 <img src="https://logos-download.com/wp-content/uploads/2016/09/React_logo_logotype_emblem-700x626.png" height={"18px"} className="me-1" />
                                 <span>React Js</span>
@@ -16,7 +16,7 @@ export const Skills = () => {
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Vitejs-logo.svg" height={"18px"} className="me-2" />
                                 <span>Vite Js</span>
                             </div>
-                            <div className="skill border border-secondary px-3 py-2 ">
+                            <div className="skill border border-secondary px-3 py-2">
                                 <img src="https://www.w3.org/html/logo/badge/html5-badge-h-solo.png" height={"20px"} className="me-1" />
                                 <span>HTML</span>
                             </div>
@@ -44,10 +44,10 @@ export const Skills = () => {
                     </div>
                 </div>
                 <div className="col-12 col-md-6">
-                    <div className="card py-4 px-3 d-flex flex-column justify-content-center h-100">
-                        <h5 className="fw-bolder">Backend</h5>
+                    <div className="card py-4 px-3 h-100">
+                        <h5 className="fw-bolder mb-3">Backend</h5>
                         <div className="d-flex flex-wrap gap-3 justify-content-center my-auto">
-                            <div className="skill border border-secondary px-3 py-2 ">
+                            <div className="skill border border-secondary px-3 py-2">
                                 <img src="https://cdn.freebiesupply.com/logos/large/2x/nodejs-icon-logo-png-transparent.png" height={"20px"} className="me-2" />
                                 <span>Node Js</span>
                             </div>
@@ -75,10 +75,10 @@ export const Skills = () => {
                     </div>
                 </div>
                 <div className="col-12 col-md-6">
-                    <div className="card py-4 px-3 d-flex flex-column justify-content-center">
-                        <h5 className="fw-bolder">Android</h5>
-                        <div className="d-flex flex-wrap gap-3 justify-content-center mt-3">
-                            <div className="skill border border-secondary px-3 py-2 ">
+                    <div className="card py-4 px-3 h-100">
+                        <h5 className="fw-bolder mb-3">Android</h5>
+                        <div className="d-flex flex-wrap gap-3 justify-content-center my-auto">
+                            <div className="skill border border-secondary px-3 py-2">
                                 <img src="https://www.pinclipart.com/picdir/big/53-534873_vector-steam-java-developer-java-icon-png-clipart.png" height={"20px"} className="me-2" />
                                 <span>Java</span>
                             </div>
@@ -110,11 +110,10 @@ export const Skills = () => {
                     </div>
                 </div>
                 <div className="col-12 col-md-6">
-                    <div className="card py-4 px-3 d-flex flex-column justify-content-center h-100">
-                        <h5 className="fw-bolder">Otros</h5>
-                        <div className="d-flex flex-wrap gap-3 justify-content-center my-auto
-                        ">
-                            <div className="skill border border-secondary px-3 py-2 ">
+                    <div className="card py-4 px-3 h-100">
+                        <h5 className="fw-bolder mb-3">Otros</h5>
+                        <div className="d-flex flex-wrap gap-3 justify-content-center my-auto">
+                            <div className="skill border border-secondary px-3 py-2">
                                 <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" height={"19px"} className="me-1" />
                                 <span>Git</span>
                             </div>

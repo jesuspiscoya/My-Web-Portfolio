@@ -14,10 +14,7 @@ export const About = () => {
                 <div className="col-12 col-lg-6 col-xxl-7">
                     <div className="about-text text-center text-lg-start mx-2 mx-sm-0 me-lg-4">
                         <p>
-                            Soy un apasionado por la programación, la tecnológica y la música. La disciplina, dedicación y compromiso son tres factores claves que me definen.💯
-                        </p>
-                        <p>
-                            Mi formación académica en Ingeniería de Sistemas e Informática me ha proporcionado una sólida base para ser aplicado en tareas desafiantes y proyectos retadores que generen un alto impacto en la sociedad.🧑‍💻
+                            Soy un apasionado por la programación, la tecnológica y la música. La disciplina, dedicación y compromiso son tres factores claves que me definen. Mi formación académica me ha proporcionado una base sólida para poder afrontar tareas desafiantes y proyectos retadores.🧑‍💻
                         </p>
                         <p>
                             Estoy emocionado por lo que depara el futuro y ansío enfrentar nuevos desafíos y oportunidades para seguir creciendo como profesional y como persona.💪
