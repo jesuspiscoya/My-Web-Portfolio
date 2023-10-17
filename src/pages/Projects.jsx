@@ -1,4 +1,4 @@
-import { useFetch } from "../hooks/useFetch";
+import { useFetch } from "../hooks/useFetch"
 
 export const Projects = () => {
     const { data, isLoading, error } = useFetch('https://api.github.com/users/jesuspiscoya/repos')
@@ -10,10 +10,10 @@ export const Projects = () => {
             <div className="row g-4 mx-auto justify-content-center px-5">
                 {isLoading
                     ? <div>...Cargando</div>
-                    : data.map(({ id, nombre, descripcion, url, topics }) => (
+                    : data.map(({ id, nombre, descripcion, portada, url, topics }) => (
                         <div className="col-12 col-md-6 col-xl-4" key={id}>
                             <div className="card-project p-4 h-100">
-                                <img src="https://user-images.githubusercontent.com/64485885/234602896-a1bd8bcc-b72b-4821-83d6-8ad885bf435e.png" className="img-fluid" />
+                                <img src={portada} className="img-fluid" />
                                 <div className="tech d-flex flex-wrap gap-2 mt-3">
                                     {topics.map((element, index) => (
                                         <span key={id + element}>{element.replaceAll('-', ' ')}</span>

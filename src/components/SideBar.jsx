@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react"
 import profile from "../assets/img/profile-photo.jpg"
 
 export const SideBar = () => {
@@ -7,12 +7,12 @@ export const SideBar = () => {
     }, [])
 
     const clickToggle = () => {
-        const sideBar = document.querySelector(".sidebar")
-        const main = document.querySelector(".main")
-        const footer = document.querySelector(".footer")
-        sideBar.classList.toggle("active")
-        main.classList.toggle("active")
-        footer.classList.toggle("active")
+        const sideBar = document.querySelector('.sidebar')
+        const main = document.querySelector('.main')
+        const footer = document.querySelector('.footer')
+        sideBar.classList.toggle('active')
+        main.classList.toggle('active')
+        footer.classList.toggle('active')
     }
 
     const onScrolling = () => {
@@ -37,10 +37,10 @@ export const SideBar = () => {
     }
 
     const clickTitle = () => {
-        const sideBar = document.querySelector(".sidebar")
+        const sideBar = document.querySelector('.sidebar')
 
         if (window.innerWidth <= 992) {
-            sideBar.classList.remove("active")
+            sideBar.classList.remove('active')
         }
     }
 

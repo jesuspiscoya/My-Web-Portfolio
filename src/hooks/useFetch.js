@@ -11,14 +11,27 @@ export const useFetch = (url) => {
     const getIndexRepo = (nombre) => {
         const repoIndex = {
             'Clinica-App': 0,
-            'Sistema-Ventas': 1,
-            'YutWu-Delivery-App': 2,
+            'YutWu-Delivery-App': 1,
+            'Sistema-Ventas': 2,
             'Biblioteca-Nacional': 3,
-            'To-do-App-Flutter': 4,
-            'Weather-React': 5,
-            'Chat-App': 6,
-            'Peliculas-React': 7,
-            'Carrito-React': 8
+            'Weather-React': 4,
+            'Peliculas-React': 5,
+            'To-do-App-Flutter': 6,
+            // 'Chat-App': 7
+        }
+        return repoIndex[nombre]
+    }
+
+    const getImgRepo = (nombre) => {
+        const repoIndex = {
+            'Clinica-App': '/src/assets/img/medicmobile-app.png',
+            'YutWu-Delivery-App': '/src/assets/img/yutwu-app.png',
+            'Sistema-Ventas': 'src/assets/img/sistema-ventas.png',
+            'Biblioteca-Nacional': 'src/assets/img/biblioteca-nacional.png',
+            'Weather-React': 'src/assets/img/weather-react.png',
+            'Peliculas-React': 'src/assets/img/peliculas-react.png',
+            'To-do-App-Flutter': 'src/assets/img/todo-app-flutter.png',
+            // 'Chat-App': 'src/assets/img/.png',
         }
         return repoIndex[nombre]
     }
@@ -33,6 +46,7 @@ export const useFetch = (url) => {
                     id: id,
                     nombre: name.replaceAll('-', ' '),
                     descripcion: description,
+                    portada: getImgRepo(name),
                     url: html_url,
                     topics: topics
                 }
