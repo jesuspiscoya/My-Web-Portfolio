@@ -1,5 +1,4 @@
 import { useEffect, useRef } from "react"
-import profile from "../assets/img/profile-photo.jpg"
 
 export const SideBar = () => {
     useEffect(() => {
@@ -51,7 +50,7 @@ export const SideBar = () => {
             </div>
             <div className="sidebar pt-5 d-flex flex-column position-fixed h-100">
                 <div className="profile h-0 opacity-0 mx-auto pt-3">
-                    <img src={profile} alt="Profile Photo" className="d-block img-fluid rounded-circle mx-auto" />
+                    <img src="https://raw.githubusercontent.com/jesuspiscoya/My-Web-Portfolio/main/src/assets/img/profile-photo.jpg" alt="Profile Photo" className="d-block img-fluid rounded-circle mx-auto" />
                     <h4 className="name-title fw-bold mt-3 text-center">Jesus Piscoya</h4>
                     <div className="social-links text-center mt-2">
                         <a href="https://www.linkedin.com/in/jesuspiscoya/" target="_blank">

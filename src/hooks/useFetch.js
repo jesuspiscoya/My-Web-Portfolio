@@ -24,14 +24,14 @@ export const useFetch = (url) => {
 
     const getImgRepo = (nombre) => {
         const repoIndex = {
-            'Clinica-App': '/src/assets/img/medicmobile-app.png',
-            'YutWu-Delivery-App': '/src/assets/img/yutwu-app.png',
-            'Sistema-Ventas': 'src/assets/img/sistema-ventas.png',
-            'Biblioteca-Nacional': 'src/assets/img/biblioteca-nacional.png',
-            'Weather-React': 'src/assets/img/weather-react.png',
-            'Peliculas-React': 'src/assets/img/peliculas-react.png',
-            'To-do-App-Flutter': 'src/assets/img/todo-app-flutter.png',
-            // 'Chat-App': 'src/assets/img/.png',
+            'Clinica-App': 'https://raw.githubusercontent.com/jesuspiscoya/My-Web-Portfolio/main/src/assets/img/medicmobile-app.png',
+            'YutWu-Delivery-App': 'https://raw.githubusercontent.com/jesuspiscoya/My-Web-Portfolio/main/src/assets/img/yutwu-app.png',
+            'Sistema-Ventas': 'https://raw.githubusercontent.com/jesuspiscoya/My-Web-Portfolio/main/src/assets/img/sistema-ventas.png',
+            'Biblioteca-Nacional': 'https://raw.githubusercontent.com/jesuspiscoya/My-Web-Portfolio/main/src/assets/img/biblioteca-nacional.png',
+            'Weather-React': 'https://raw.githubusercontent.com/jesuspiscoya/My-Web-Portfolio/main/src/assets/img/weather-react.png',
+            'Peliculas-React': 'https://raw.githubusercontent.com/jesuspiscoya/My-Web-Portfolio/main/src/assets/img/peliculas-react.png',
+            'To-do-App-Flutter': 'https://raw.githubusercontent.com/jesuspiscoya/My-Web-Portfolio/main/src/assets/img/todo-app-flutter.png',
+            // 'Chat-App': '',
         }
         return repoIndex[nombre]
     }

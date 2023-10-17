@@ -1,5 +1,3 @@
-import profile from "../assets/img/profile-photo.jpg"
-
 export const About = () => {
     return (
         <section id="about" className="text-center py-5">
@@ -8,7 +6,7 @@ export const About = () => {
             <div className="row g-5 g-lg-0 mx-auto align-items-center col-11 col-lg-12 col-xl-11">
                 <div className="col-12 col-sm-9 col-md-7 col-lg-5 col-xxl-4 d-flex justify-content-center align-items-center mx-auto">
                     <div className="home-photo rounded-circle">
-                        <img src={profile} className="img-fluid rounded-circle" />
+                        <img src="https://raw.githubusercontent.com/jesuspiscoya/My-Web-Portfolio/main/src/assets/img/profile-photo.jpg" className="img-fluid rounded-circle" />
                     </div>
                 </div>
                 <div className="col-12 col-lg-6 col-xxl-7">
