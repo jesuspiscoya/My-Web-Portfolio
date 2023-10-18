@@ -1,4 +1,4 @@
-#button-cv {
+.button-cv {
     color: var(--white);
     background: #1c265a;
     text-decoration: none;
@@ -17,12 +17,12 @@
         0px 60px 80px rgba(0, 0, 0, 0.07);
 }
 
-#button-cv i {
+.button-cv i {
     transition: transform 0.4s ease;
     margin-right: 12px;
 }
 
-#button-cv:hover {
+.button-cv:hover {
     background: #071344;
     border: 1px solid var(--blue-light);
     box-shadow: 0 5px 10px -7px var(--blue-light);

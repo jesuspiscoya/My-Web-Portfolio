@@ -13,7 +13,7 @@ export const Projects = () => {
                     : data.map(({ id, nombre, descripcion, portada, url, topics }) => (
                         <div className="col-12 col-md-6 col-xl-4" key={id}>
                             <div className="card-project p-4 h-100">
-                                <img src={portada} className="img-fluid" />
+                                <img src={portada} className="img-fluid" alt={nombre} />
                                 <div className="tech d-flex flex-wrap gap-2 mt-3">
                                     {topics.map((element, index) => (
                                         <span key={id + element}>{element.replaceAll('-', ' ')}</span>
@@ -22,6 +22,10 @@ export const Projects = () => {
                                 <div className="d-flex flex-column text-start mt-1">
                                     <h5 className="mt-2 fw-bolder">{nombre}</h5>
                                     <span>{descripcion}</span>
+                                </div>
+                                <div className="d-flex gap-3 mt-3">
+                                    <a href={url} target="_blank" className="btn-code w-100">Ver Código</a>
+                                    <a href={url} target="_blank" className="btn-live w-100">Live Demo</a>
                                 </div>
                             </div>
                         </div>

@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react"
+import { SocialBtn } from "./SocialBtn"
 
 export const SideBar = () => {
     useEffect(() => {
@@ -52,20 +53,7 @@ export const SideBar = () => {
                 <div className="profile h-0 opacity-0 mx-auto pt-3">
                     <img src="https://raw.githubusercontent.com/jesuspiscoya/My-Web-Portfolio/main/src/assets/img/profile-photo.jpg" alt="Profile Photo" className="d-block img-fluid rounded-circle mx-auto" />
                     <h4 className="name-title fw-bold mt-3 text-center">Jesus Piscoya</h4>
-                    <div className="social-links text-center mt-2">
-                        <a href="https://www.linkedin.com/in/jesuspiscoya/" target="_blank">
-                            <i className="fa-brands fa-linkedin fa-lg"></i>
-                        </a>
-                        <a href="https://github.com/jesuspiscoya" target="_blank">
-                            <i className="fa-brands fa-github fa-lg"></i>
-                        </a>
-                        <a href="https://wa.me/51921104614" target="_blank">
-                            <i className="fa-brands fa-whatsapp fa-lg"></i>
-                        </a>
-                        <a href="mailto:jesuspiscoya0351@gmail.com">
-                            <i className="fa-solid fa-envelope fa-lg"></i>
-                        </a>
-                    </div>
+                    <SocialBtn margin="mt-2" />
                 </div>
                 <div className="navigation my-auto">
                     <ul className="ps-3 text-center mb-0">

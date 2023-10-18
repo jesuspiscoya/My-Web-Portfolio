@@ -264,14 +264,14 @@ body {
 /* Projects */
 .card-project {
     border-radius: 10px;
-    cursor: pointer;
+    cursor: default;
     background: #1414269e;
     box-shadow: #26053bee 0 0 15px 3px;
     transition: all 0.4s ease;
 }
 
 .card-project:hover {
-    translate: 0 -8px;
+    translate: 0 -5px;
     box-shadow: #37065ae4 0 0 35px;
 }
 
@@ -287,6 +287,33 @@ body {
     border-radius: 10px;
     padding: 2px 8px;
     font-size: 11.5px;
+}
+
+.btn-code,
+.btn-live {
+    color: var(--gray);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 0;
+    background: #15152e;
+    border-radius: 10px;
+    transition: all 0.4s;
+    border: 1px solid transparent;
+}
+
+.btn-live {
+    background: #5800b0;
+}
+
+.btn-code:hover,
+.btn-live:hover {
+    background: #3e007d;
+    color: var(--white);
+    border: 1px solid #ba46fc;
+}
+
+.btn-code:hover {
+    background: #15152e;
 }
 
 

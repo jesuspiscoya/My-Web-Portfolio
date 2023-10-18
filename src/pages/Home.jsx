@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react"
 import Typed from "typed.js"
 import Confetti from "https://esm.run/canvas-confetti@1"
 import "../styles/btn-conffeti.css"
+import { SocialBtn } from "../components/SocialBtn"
 
 export const Home = () => {
     const textRef = useRef(null)
@@ -24,7 +25,7 @@ export const Home = () => {
         new Typed(textRef.current, {
             strings: [
                 'Ing. de Sistemas e Informática.',
-                'Movil Developer.',
+                'Android Developer.',
                 'Web Developer.',
                 'Fullstack Developer.'
             ],
@@ -42,23 +43,10 @@ export const Home = () => {
             <h4 className="my-3 pb-4">
                 Soy <span ref={textRef} className="fw-bold" />
             </h4>
-            <a id="button-cv" href={"http://bit.ly/jesuspiscoyacv"} download="CV-JESUS-PISCOYA-BANCES.pdf" onClick={clickConffeti}>
+            <a href={"http://bit.ly/jesuspiscoyacv"} download="CV-JESUS-PISCOYA-BANCES.pdf" className="button-cv mb-2" onClick={clickConffeti}>
                 <i className="fa-solid fa-circle-down fa-lg"></i>Descargar CV
             </a>
-            <div className="social-links mt-4 pt-3">
-                <a href="https://www.linkedin.com/in/jesuspiscoya/" target="_blank">
-                    <i className="fa-brands fa-linkedin fa-lg"></i>
-                </a>
-                <a href="https://github.com/jesuspiscoya" target="_blank">
-                    <i className="fa-brands fa-github fa-lg"></i>
-                </a>
-                <a href="https://wa.me/51921104614" target="_blank">
-                    <i className="fa-brands fa-whatsapp fa-lg"></i>
-                </a>
-                <a href="mailto:jesuspiscoya0351@gmail.com">
-                    <i className="fa-solid fa-envelope fa-lg"></i>
-                </a>
-            </div>
+            <SocialBtn margin="mt-4" />
         </section>
     )
 }

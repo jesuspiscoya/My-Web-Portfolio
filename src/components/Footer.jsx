@@ -1,47 +1,18 @@
-export const Footer = () => {
+import { SocialBtn } from "./SocialBtn"
+
+export const Footer = ({ constant }) => {
     return (
         <div className="footer text-center d-flex flex-column justify-content-center py-3 px-2">
             <h1 className="name-aurora fs-2">Jesus Piscoya</h1>
-            <div className="social-links mt-1">
-                <a href="https://www.linkedin.com/in/jesuspiscoya/" target="_blank">
-                    <i className="fa-brands fa-linkedin fa-lg"></i>
-                </a>
-                <a href="https://github.com/jesuspiscoya" target="_blank">
-                    <i className="fa-brands fa-github fa-lg"></i>
-                </a>
-                <a href="https://wa.me/51921104614" target="_blank">
-                    <i className="fa-brands fa-whatsapp fa-lg"></i>
-                </a>
-                <a href="mailto:jesuspiscoya0351@gmail.com">
-                    <i className="fa-solid fa-envelope fa-lg"></i>
-                </a>
-            </div>
-            <h6 className="mt-4 mb-2 fw-bolder">Este sitio fué desarrollado con:</h6>
+            <SocialBtn />
+            <h6 className="mt-3 mb-2 fw-bolder">Este sitio fué desarrollado con:</h6>
             <div className="d-flex flex-wrap justify-content-center gap-2">
-                <div className="bg-none border border-primary px-2 py-1 rounded-2">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" height={"14px"} className="me-1" />
-                    <span>React Js</span>
-                </div>
-                <div className="bg-none border border-primary px-2 py-1 rounded-2 ">
-                    <img src="https://www.w3.org/html/logo/badge/html5-badge-h-solo.png" height={"14px"} className="me-1" />
-                    <span>HTML</span>
-                </div>
-                <div className="bg-none border border-primary px-2 py-1 rounded-2">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg" height={"14px"} className="me-1" />
-                    <span>CSS</span>
-                </div>
-                <div className="bg-none border border-primary px-2 py-1 rounded-2">
-                    <img src="https://www.svgrepo.com/show/349419/javascript.svg" height={"15px"} className="me-2" />
-                    <span>JavaScript</span>
-                </div>
-                <div className="bg-none border border-primary px-2 py-1 rounded-2">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg" height={"14px"} className="me-1" />
-                    <span>Bootstrap</span>
-                </div>
-                <div className="bg-none border border-primary px-2 py-1 rounded-2">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Vitejs-logo.svg" height={"13px"} className="me-2" />
-                    <span>Vite Js</span>
-                </div>
+                {constant.map(({ icon, name, height }) => (
+                    <div className="bg-none border border-primary px-2 py-1 rounded-2" key={crypto.randomUUID()}>
+                        <img src={icon} height={height} className="me-1" />
+                        <span>{name}</span>
+                    </div>
+                ))}
             </div>
             <span className="mt-4">© {new Date().getFullYear()} Jesus Piscoya | Todos los derechos reservados.</span>
         </div>

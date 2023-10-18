@@ -5,6 +5,7 @@ import { Home } from "./pages/Home"
 import { Projects } from "./pages/Projects"
 import { Skills } from "./pages/Skills"
 import { Summary } from "./pages/Summary"
+import { about_me, skills, education, experiences, footer } from "./assets/data/constants"
 import "./styles/styles.css"
 
 export const App = () => {
@@ -13,12 +14,12 @@ export const App = () => {
             <SideBar />
             <div className="main position-relative d-flex flex-column px-md-3 px-xl-5">
                 <Home />
-                <About />
-                <Skills />
-                <Summary />
+                <About constant={about_me} />
+                <Skills constant={skills} />
+                <Summary education={education} experiences={experiences} />
                 <Projects />
             </div>
-            <Footer />
+            <Footer constant={footer} />
         </>
     )
 }
