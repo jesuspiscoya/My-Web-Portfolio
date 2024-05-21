@@ -47,7 +47,7 @@ export const Home = () => {
         Soy <span ref={textRef} className="fw-bold" />
       </h4>
       <a
-        href={"https://bit.ly/3RA7MAi"}
+        href="http://bit.ly/4bIdmJs"
         target="_blank"
         download="CV-JESUS-PISCOYA-BANCES.pdf"
         className="button-cv mb-2"
