@@ -103,6 +103,11 @@ export const skills = [
         name: "SQL Server",
         height: "18px",
       },
+      {
+        icon: "https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg",
+        name: "PostgreSQL",
+        height: "16px",
+      },
     ],
   },
   {
@@ -192,7 +197,7 @@ export const education = [
     degree: "Ingeniería de Sistemas e Informática",
     school: "Universidad Tecnológica del Perú",
     date: "Mar 2018 - Dic 2023",
-    description: "Egresado en Ingeniería de sistemas e Informática.",
+    description: "Bachiller en Ingeniería de sistemas e Informática.",
   },
   {
     degree: "Excel Intermedio",
@@ -226,17 +231,17 @@ export const experiences = [
   {
     role: "Practicante de Desarrollo Web",
     company: "NEONHOUSELED S.A.C.",
-    date: "Nov 2023 - Actual",
+    date: "Nov 2023 - Feb 2024",
     description: [
       "Depuré código de páginas web de proyectos que se me asignaron.",
       "Implementé mejoras y soluciones a problemas identificados dentro de las páginas web.",
-      "Desarrollé los proyectos encargados, asignando y supervisando las tareas al resto del equipo.",
+      "Lideré los proyectos encargados, asignando y supervisando las tareas al resto del equipo.",
     ],
   },
   {
     role: "Asesor de Ventas",
     company: "TELEATENTO DEL PERU S.A.C. (ATENTO)",
-    date: "Mar 2022 - Abr 2022",
+    date: "Abr 2022 - May 2022",
     description: [
       "Contacté telefónicamente a clientes para ofrecerles planes de servicio móvil.",
       "Promocioné e informé al cliente acerca de características y beneficios de los servicios.",
