@@ -84,9 +84,9 @@ export const skills = [
         height: "16px",
       },
       {
-        icon: "https://www.pinclipart.com/picdir/big/53-534873_vector-steam-java-developer-java-icon-png-clipart.png",
-        name: "Java",
-        height: "19px",
+        icon: "https://www.svgrepo.com/show/353724/express.svg",
+        name: "Express JS",
+        height: "18px",
       },
       {
         icon: "https://www.svgrepo.com/show/353631/dart.svg",
@@ -94,7 +94,7 @@ export const skills = [
         height: "17px",
       },
       {
-        icon: "https://logodownload.org/wp-content/uploads/2016/10/mysql-logo-6.png",
+        icon: "https://www.svgrepo.com/show/303251/mysql-logo.svg",
         name: "MySQL",
         height: "18px",
       },
@@ -114,7 +114,7 @@ export const skills = [
     title: "Android",
     skills: [
       {
-        icon: "https://www.pinclipart.com/picdir/big/53-534873_vector-steam-java-developer-java-icon-png-clipart.png",
+        icon: "https://www.svgrepo.com/show/303654/java-logo.svg",
         name: "Java",
         height: "19px",
       },
@@ -228,6 +228,14 @@ export const education = [
 ];
 
 export const experiences = [
+  {
+    role: "Practicante Profesional de TI",
+    company: "LAIVE S.A.",
+    date: "Jun 2024 - Actual",
+    description: [
+      "Brindar soporte tecnológico y de proceso de las diversas herramientas teconológicas que se ponen al servicio de las operaciones de Laive.",
+    ],
+  },
   {
     role: "Practicante de Desarrollo Web",
     company: "NEONHOUSELED S.A.C.",
