@@ -34,6 +34,11 @@ export const skills = [
     title: "Frontend",
     skills: [
       {
+        icon: "https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg",
+        name: "Next Js",
+        height: "18px",
+      },
+      {
         icon: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
         name: "React Js",
         height: "17px",
@@ -44,19 +49,14 @@ export const skills = [
         height: "17px",
       },
       {
-        icon: "https://www.w3.org/html/logo/badge/html5-badge-h-solo.png",
-        name: "HTML",
-        height: "17px",
-      },
-      {
-        icon: "https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg",
-        name: "CSS",
-        height: "18px",
-      },
-      {
         icon: "https://www.svgrepo.com/show/349419/javascript.svg",
         name: "JavaScript",
         height: "17px",
+      },
+      {
+        icon: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
+        name: "Tailwind CSS",
+        height: "18px",
       },
       {
         icon: "https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg",
@@ -79,34 +79,24 @@ export const skills = [
         height: "21px",
       },
       {
-        icon: "https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg",
-        name: "PHP",
-        height: "16px",
-      },
-      {
         icon: "https://www.svgrepo.com/show/353724/express.svg",
         name: "Express JS",
         height: "18px",
       },
       {
-        icon: "https://www.svgrepo.com/show/353631/dart.svg",
-        name: "Dart",
+        icon: "https://upload.wikimedia.org/wikipedia/commons/f/ff/C-Sharp_Logo.svg",
+        name: "C#",
         height: "17px",
       },
       {
-        icon: "https://www.svgrepo.com/show/303251/mysql-logo.svg",
-        name: "MySQL",
-        height: "18px",
-      },
-      {
-        icon: "https://martinsblog.dk/wp-content/uploads/2021/07/sql-logo.png",
-        name: "SQL Server",
-        height: "18px",
-      },
-      {
-        icon: "https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg",
-        name: "PostgreSQL",
+        icon: "https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg",
+        name: "PHP",
         height: "16px",
+      },
+      {
+        icon: "https://www.svgrepo.com/show/353631/dart.svg",
+        name: "Dart",
+        height: "17px",
       },
     ],
   },
@@ -136,17 +126,52 @@ export const skills = [
       {
         icon: "https://www.svgrepo.com/show/373595/firebase.svg",
         name: "Firebase",
-        height: "19PX",
+        height: "19px",
       },
       {
         icon: "https://upload.wikimedia.org/wikipedia/commons/7/79/Flutter_logo.svg",
         name: "Flutter",
-        height: "17PX",
+        height: "17px",
       },
       {
         icon: "https://upload.wikimedia.org/wikipedia/commons/c/c1/Android_Studio_icon_%282023%29.svg",
         name: "Android Studio",
-        height: "19PX",
+        height: "19px",
+      },
+    ],
+  },
+  {
+    title: "Ingeniería de Datos",
+    skills: [
+      {
+        icon: "https://upload.wikimedia.org/wikipedia/commons/3/31/Python-logo.png",
+        name: "Python",
+        height: "18px",
+      },
+      {
+        icon: "https://upload.wikimedia.org/wikipedia/commons/5/59/Visual_Studio_Icon_2019.svg",
+        name: "SSIS",
+        height: "18px",
+      },
+      {
+        icon: "https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg",
+        name: "Power BI",
+        height: "18px",
+      },
+      {
+        icon: "https://martinsblog.dk/wp-content/uploads/2021/07/sql-logo.png",
+        name: "SQL Server",
+        height: "18px",
+      },
+      {
+        icon: "https://www.svgrepo.com/show/303251/mysql-logo.svg",
+        name: "MySQL",
+        height: "18px",
+      },
+      {
+        icon: "https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg",
+        name: "PostgreSQL",
+        height: "16px",
       },
     ],
   },
@@ -164,9 +189,19 @@ export const skills = [
         height: "19px",
       },
       {
+        icon: "https://commons.wikimedia.org/wiki/File:Bitbucket-blue-logomark-only.svg",
+        name: "Bitbucket",
+        height: "18px",
+      },
+      {
         icon: "https://www.svgrepo.com/show/452129/vs-code.svg",
         name: "VS Code",
         height: "20px",
+      },
+      {
+        icon: "https://upload.wikimedia.org/wikipedia/commons/5/59/Visual_Studio_Icon_2019.svg",
+        name: "Visual Studio",
+        height: "18px",
       },
       {
         icon: "https://blog.postman.com/wp-content/uploads/2018/04/logo-mark.png",
@@ -174,19 +209,44 @@ export const skills = [
         height: "19px",
       },
       {
-        icon: "https://www.svgrepo.com/show/354575/xampp.svg",
-        name: "XAMPP",
-        height: "18px",
+        icon: "https://www.svgrepo.com/show/349532/trello.svg",
+        name: "Jira",
+        height: "18PX",
       },
       {
-        icon: "https://www.svgrepo.com/show/349532/trello.svg",
+        icon: "https://www.svgrepo.com/show/353935/jira.svg",
         name: "Trello",
-        height: "18PX",
+        height: "18px",
       },
       {
         icon: "https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg",
         name: "Figma",
-        height: "16PX",
+        height: "16px",
+      },
+    ],
+  },
+  {
+    title: "Cloud",
+    skills: [
+      {
+        icon: "https://www.svgrepo.com/show/353805/google-cloud.svg",
+        name: "Google Cloud",
+        height: "17px",
+      },
+      {
+        icon: "https://www.svgrepo.com/show/448271/azure-devops.svg",
+        name: "Azure DevOps",
+        height: "17px",
+      },
+      {
+        icon: "https://www.svgrepo.com/show/452192/docker.svg",
+        name: "Docker",
+        height: "17px",
+      },
+      {
+        icon: "https://www.svgrepo.com/show/373457/azurepipelines.svg",
+        name: "Azure Pipelines",
+        height: "17px",
       },
     ],
   },
@@ -197,7 +257,14 @@ export const education = [
     degree: "Ingeniería de Sistemas e Informática",
     school: "Universidad Tecnológica del Perú",
     date: "Mar 2018 - Dic 2023",
-    description: "Bachiller en Ingeniería de sistemas e Informática.",
+    description: "Ingeniero de sistemas e Informática.",
+  },
+  {
+    degree: "AZ-104T00-AC Microsoft Azure Administrator",
+    school: "Business IT",
+    date: "Sep 2024",
+    description:
+      "Certificado del curso AZ-104T00-AC Microsoft Azure Administrator.",
   },
   {
     degree: "Excel Intermedio",
@@ -233,7 +300,12 @@ export const experiences = [
     company: "LAIVE S.A.",
     date: "Jun 2024 - Actual",
     description: [
-      "Brindar soporte tecnológico y de proceso de las diversas herramientas teconológicas que se ponen al servicio de las operaciones de Laive.",
+      "Automaticé procesos manuales, operativos y flujos de trabajo.",
+      "Colaboré en el mantenimiento y la mejora de la infraestructura en la nube.",
+      "Ayudé en la configuración, despliegue automático y monitoreo de entornos de desarrollo y producción.",
+      "Diagnostiqué y resolví problemas técnicos que afectan el rendimiento de sistemas, aplicaciones y plataformas.",
+      "Apoyé en el desarrollo de mejoras en el Backend de aplicaciones web, y funcionalidades del lado del servidor utilizando Cloud Functions en Google Cloud Platform.",
+      "Apoyé en la implementación y mantenimiento de herramientas para la mejora del rendimiento, como monitoring y logging."
     ],
   },
   {
@@ -241,30 +313,22 @@ export const experiences = [
     company: "NEONHOUSELED S.A.C.",
     date: "Nov 2023 - Feb 2024",
     description: [
-      "Depuré código de páginas web de proyectos que se me asignaron.",
-      "Implementé mejoras y soluciones a problemas identificados dentro de las páginas web.",
+      "Desarrollé y depuré aplicaciones web en PHP, JavaScript, React, Tailwind CSS y Node Js de proyectos que se me asignaron, corrigiendo bugs y mejorando el diseño web.",
+      "Colaboré estrechamente con el equipo de desarrollo para diseñar, implementar y probar nuevas funcionalidades y mejoras.",
+      "Trabajé en conjunto con el equipo de diseño para garantizar la intuitividad y facilidad de uso de las aplicaciones web que desarrollé.",
       "Lideré los proyectos encargados, asignando y supervisando las tareas al resto del equipo.",
+      "Mantuve el seguimiento diario del código por medio de herramientas de control de versiones, como Git."
     ],
   },
   {
-    role: "Asesor de Ventas",
-    company: "TELEATENTO DEL PERU S.A.C. (ATENTO)",
-    date: "Abr 2022 - May 2022",
+    role: "Freelance FullStack Developer",
+    company: "Freelance",
+    date: "Nov 2022 - May 2023",
     description: [
-      "Contacté telefónicamente a clientes para ofrecerles planes de servicio móvil.",
-      "Promocioné e informé al cliente acerca de características y beneficios de los servicios.",
-      "Registré la atención diaria mediante el sistema y aplicativos correspondientes.",
-    ],
-  },
-  {
-    role: "Asistente de Cajas",
-    company: "HOMECENTERS PERUANOS S.A. (PROMART)",
-    date: "Ene 2021 - Feb 2022",
-    description: [
-      "Cumplí con el protocolo de atención al cliente.",
-      "Registré las transacciones en caja: ventas, abonos y disposición de efectivo.",
-      "Incentivé el pago de transacciones de venta con la tarjeta de crédito corporativa.",
-      "Realicé toda función o encargo que mi jefe inmediato me asignó.",
+      "Trabajé estrechamente con los clientes en sectores de construcción y negocios de emprendimiento y Food Services, abordando sus necesidades específicas para sitios web.",
+      "Desarrollé las aplicaciones web en: React, ViteJs, Bootstrap, MySQL.",
+      "Desplegué y mantuve las aplicaciones web en hosting como SiteGround, DonWeb y BlueHost. Además, realicé la configuración del dominio web.",
+      "Me adapté de manera precisa ante los requerimientos cambiantes de cada proyecto.",
     ],
   },
 ];
